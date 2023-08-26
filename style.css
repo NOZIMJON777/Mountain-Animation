@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.fa-cloud{
+    color: rgb(195, 228, 240);
+    position: relative;  
+}
+.cloud-1{
+    top: 200px;
+    left: 0px;
+    animation-name: cloud-1;
+    animation-duration: 14s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+    animation-direction: alternate-reverse;
+    z-index: 2;
+}
+.cloud-2{
+    top: 250px;
+    left: 0px;
+    animation-name: cloud-2;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 2;
+}
+.cloud-3{
+    top: 220px;
+    left: 0px;
+    animation-name: cloud-3;
+    animation-duration: 25s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    z-index: 2;
+}
+.cloud-4{
+    top: 220px;
+    left: 0px;
+    animation-name: cloud-4;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 2;
+}
+ @keyframes cloud-1 {
+    from {left: -150px;}
+
+    to {left: 100%;}
+}
+@keyframes cloud-2 {
+    from {left: -150px;}
+
+    to {left: 100%;}
+}
+@keyframes cloud-3 {
+    from {left: -150px;}
+
+    to {left: 100%;}
+}
+@keyframes cloud-4 {
+    from {left: -150px;}
+
+    to {left: 100%;}
+}
+
+
+
+
+img{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+.sun{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(241, 204, 136);
+    position: relative;
+    left: 100px;
+    bottom: 180px;
+    z-index: 1;
+
+   animation-name: sunrise ;
+   animation-duration: 10s;
+   animation-timing-function: ease-in-out;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   margin: 0px auto;
+}
+
+ @keyframes sunrise{
+from { transform: translateY(-100px);
+    background-color: rgb(218, 86, 56); 
+       
+     }
+to{
+    transform: translateY(400px);
+    background-color: rgb(241, 204, 136); 
+  }
+}
